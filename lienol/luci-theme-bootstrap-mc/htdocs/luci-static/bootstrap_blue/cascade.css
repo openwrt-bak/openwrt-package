@@ -879,10 +879,11 @@ input[type=file] {
 }
 
 .cbi-value-description {
-	display: inline;
+	/* display: inline; */
 	background-image: url(/luci-static/resources/cbi/help.gif);
-	background-position-x: 0px;
-	background-position-y: 1px;
+	/* background-position-x: 0px;
+	background-position-y: 1px; */
+	background-position: 0em 0.3em;
 	background-repeat: no-repeat;
 	padding: 0 1.2rem;
 }
@@ -1350,6 +1351,11 @@ body.modal-overlay-active #modal_overlay {
     min-width: 210px;
     max-width: 400px;
     width: auto;
+    background: white;
+    border: 1px solid #118af3;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 0.3em !important;
 }
 
 .cbi-dynlist > .item {
@@ -1423,7 +1429,7 @@ body.modal-overlay-active #modal_overlay {
 }
 
 .cbi-progressbar > div {
-    background: #b9b6eb;
+    background: #85d8ff;
     height: 100%;
     transition: width .25s ease-in;
     width: 0%;
