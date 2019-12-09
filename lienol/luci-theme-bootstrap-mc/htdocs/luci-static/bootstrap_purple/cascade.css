@@ -1260,10 +1260,33 @@ body.modal-overlay-active {
 }
 
 body.modal-overlay-active #modal_overlay {
-    visibility: visible;
-    left: 0;
-    right: 0;
-    opacity: 1;
+	visibility: visible;
+	left: 50%;
+	top: 50%;
+	position: absolute;
+	opacity: 1;
+	width: auto;
+	right: unset;
+	bottom: unset;
+	transform: translate(-50%,-50%);
+	overflow: unset;
+	height: auto;
+	background: unset;
+}
+
+body.modal-overlay-active #modal_overlay > .modal {
+	align-items: center;
+	box-shadow: 0 0 3px #444;
+	display: flex;
+	flex-wrap: wrap;
+	max-height: unset;
+	max-width: unset;
+	min-height: 32px;
+	min-width: 270px;
+	background: #fe8;
+	border-radius: 3px;
+	padding: 1em 1.5em;
+	margin: 0;
 }
 
 #modal_overlay {
@@ -1293,22 +1316,6 @@ body.modal-overlay-active #modal_overlay {
     border: 1px solid rgba(0, 0, 0, .1);
     border-width: 2px 0;
 }*/
-
-.modal, #modal_overlay > .modal {
-    align-items: center;
-    background: #fff;
-    border-radius: 3px;
-    box-shadow: 0 0 3px #444;
-    display: flex;
-    flex-wrap: wrap;
-    max-height: 2400px;
-    max-width: 600px;
-    min-height: 32px;
-    min-width: 270px;
-    width: 90%;
-    margin: 5em auto;
-    padding: 1em 1em .5em;
-}
 
 .modal > * {
     flex-basis: 100%;
