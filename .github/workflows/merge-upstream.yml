@@ -6,17 +6,16 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 #
 
-name: openwrt-package-upstream
+name: Merge-upstream
 
 on:
+  push:
+    branches: 
+      - master
   schedule:
     - cron: 30 19 * * *
-  # push:
-  #   branches: 
-  #     - master
 
 jobs:
-
   merge:
 
     runs-on: ubuntu-latest
